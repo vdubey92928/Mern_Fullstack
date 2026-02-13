@@ -35,22 +35,6 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.put('/:id', async (req, res) => {
-    try {
-        await User.findByIdAndUpdate(req.params.id, req.body);
-        res.json({ message: "User updated successfully" });
-    } catch (err) {
-        res.status(500).json({ message: err.message });
-    }
-});
 
-router.delete('/:id', async (req, res) => {
-    try {
-        await User.findByIdAndDelete(req.params.id);
-        res.json({ message: "User deleted successfully" });
-    } catch (err) {
-        res.status(500).json({ message: err.message });
-    }
-});
 
 module.exports = router;

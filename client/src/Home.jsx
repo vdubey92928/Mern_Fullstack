@@ -44,6 +44,18 @@ const Home = () => {
                 <input type="submit" />
 
             </form>
+
+
+
+
+            <table>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                </tr>
+            </table>
         </div>
     )
 }
